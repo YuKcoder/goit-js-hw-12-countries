@@ -1,0 +1,37 @@
+.card-country {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.countries-card__title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.countries-card__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.countries-card__info {
+  margin-right: 50px;
+}
+
+.countries-card__parameter,
+.country-list__text {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.country-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.countries-card__img {
+  box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}

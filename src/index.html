@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Search countries</title>
+    <link href="../node_modules/@pnotify/core/dist/PNotify.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../node_modules/@pnotify/mobile/dist/PNotifyMobile.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,10 +18,17 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <div class="container">
+      <input class="input-search js-input" type="text" placeholder="Type a country name..." />
+    </div>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <div class="container">
+      <ul class="countries-card"></ul>
+    </div>
+
+    <div class="container">
+      <ul class="countries-list"></ul>
+    </div>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
